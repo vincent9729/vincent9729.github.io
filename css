@@ -1,0 +1,72 @@
+ body {
+            background-color: white;
+        }
+        
+        h1 {
+            text-align: center;
+            color: black;
+        }
+        
+        .box1,
+        .box2,
+        .box3 {
+            margin-top: 10px;
+            width: 300px;
+            display: inline-block;
+            color: black;
+            border-style: solid;
+            margin-left: 10px;
+            background-color: rgb(211, 211, 211);
+            padding: 1.5%;
+            position: relative;
+            padding-top: 50px;
+        }
+        
+        .box1 span h2,
+        .box2 span h2,
+        .box3 span h2 {
+            text-align: right;
+            width: 100px;
+            height: 30px;
+            border: 1px solid black;
+            text-align: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+        
+        .box1 span h2 {
+            background-color: brown;
+        }
+        
+        .box2 span h2 {
+            background-color: blueviolet;
+        }
+        
+        .box3 span h2 {
+            background-color: chocolate;
+        }
+        /*The below has been configured for tablet view) */
+        
+        @media screen and (max-width: 992px) {
+            .box1,
+            .box2 {
+                width: 39%;
+            }
+            .box2 {
+                clear: right;
+            }
+            .box3 {
+                width: 83%;
+            }
+        }
+        /*The below has been configured for mobile view*/
+        
+        @media screen and (max-width: 767px) {
+            .box1,
+            .box2,
+            .box3 {
+                width: 50%;
+            }
+        }
